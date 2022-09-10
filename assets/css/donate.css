@@ -1,0 +1,51 @@
+@media only screen and (max-device-width: 360px), (max-width: 360px) {
+    .mytabs {
+        padding: 0 !important;
+    }
+}
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    padding: 25px;
+}
+.mytabs input[type="radio"] {
+    display: none;
+}
+.mytabs label {
+    padding: 10px;
+    background: rgb(54, 54, 54);
+    font-weight: bold;
+    display: inline;
+    cursor: pointer;
+    border: 1px solid wheat;
+    border-radius: 4px;
+}
+.mytabs label img {
+    width: 22px;
+    vertical-align: middle;
+}
+.mytabs .tab {
+    width: 100%;
+    padding: 0;
+    order: 1;
+    display: none;
+    align-items: center;
+    text-align: center;
+}
+.mytabs .tab p.caddress, .caddress {
+    color: rgb(222, 184, 135);
+    overflow-wrap: break-word;
+    font-weight: bold;
+}
+.mytabs .tab img {
+    max-width: 200px;
+    width: auto;
+    height: auto;
+}
+.mytabs input[type='radio']:checked + label + .tab {
+    display: block;
+}
+.mytabs input[type="radio"]:checked + label {
+    background: #141414;
+}
